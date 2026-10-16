@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+TestResults/
+*.user
+*.suo
+*.nupkg
+.env
+*.md
+!README.md

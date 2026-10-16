@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ModelOps.Api/ModelOps.Api.csproj" />
+    <Project Path="src/ModelOps.Application/ModelOps.Application.csproj" />
+    <Project Path="src/ModelOps.Desktop/ModelOps.Desktop.csproj" />
+    <Project Path="src/ModelOps.Domain/ModelOps.Domain.csproj" />
+    <Project Path="src/ModelOps.Infrastructure/ModelOps.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ModelOps.UnitTests/ModelOps.UnitTests.csproj" />
+  </Folder>
+</Solution>

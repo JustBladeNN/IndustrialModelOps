@@ -1,0 +1,31 @@
+@host = http://localhost:5080
+
+### Health check
+GET {{host}}/health
+Accept: application/json
+
+### Create a project
+POST {{host}}/api/v1/projects
+Content-Type: application/json
+
+{
+  "name": "Plant model"
+}
+
+### List projects
+GET {{host}}/api/v1/projects
+Accept: application/json
+
+### Generate elements (replace projectId)
+POST {{host}}/api/v1/projects/00000000-0000-0000-0000-000000000000/generate
+Content-Type: application/json
+
+{
+  "count": 10000
+}
+
+### Start validation (replace projectId)
+POST {{host}}/api/v1/projects/00000000-0000-0000-0000-000000000000/checks
+
+### Inspect OpenAPI document
+GET {{host}}/openapi/v1.json
